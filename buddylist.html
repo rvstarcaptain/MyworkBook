@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            
+            box-sizing: border-box;
+            height: 126px;
+            margin: 30px;
+            padding: 30px;
+            display: inline-block;
+            width: 450px;
+
+        } */
+        #main-frame{
+            border: 2px solid black;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* box-sizing: border-box; */
+            height: 150px;
+            display: inline-block;
+            width: 600px;
+            margin-left:  100px;
+            padding-left: 30px;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        button{
+            margin-left: 150px;
+        }
+        #buddylist{
+            box-sizing: border-box;
+            
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-frame" >
+        <label for="buddy">Enter your Buddy name: </label>
+        <input type="text" id="screen">
+        <br>
+        <br>
+        <button onclick="clickme(event)">submit</button>
+
+    </div>
+    <h3 id="buddylist">Your buddy list is Below</h3>
+
+    <script>
+        function clickme(event){
+            console.log("i am clicked");
+            console.log(document.getElementById('screen').value);
+            console.log(event.target.output = document.getElementById('buddylist').innerHTML);
+        }
+    </script>
+</body>
+
+</html>

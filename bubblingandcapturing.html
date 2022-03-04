@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            min-width: 20px;
+            min-height: 20px;
+            margin: 20px;
+            padding: 20px;
+        }
+        .main{
+            border: 2px solid green;
+            min-height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="outermost">
+            <div class="outer">
+                <div class="mid">
+                    <div class="lower"></div>
+                </div>
+            </div>
+        </div>
+        <h3 id="output"> something went wrong:</h3>
+    </main>
+    
+    <script>
+        document.querySelector(".outermost").addEventListener('click',(e)=>{
+            console.log("outermosdiv-clicked")
+            
+        },true)
+        document.querySelector(".outer").addEventListener('click',()=>{
+            console.log("outer-div-clicked")
+        },true)
+        document.querySelector(".mid").addEventListener('click',(e)=>{
+            console.log("middile-div-clicked")
+            e.stopPropagation();
+        },true)
+        document.querySelector(".lower").addEventListener('click',()=>{
+            console.log("lowerdiv-clicked")
+        },true)
+        // document.querySelector(".main").addEventListener('click',(e)=>{
+        //     console.log("main-clicked")
+        //     let output=document.getElementById('output').innerText = `${"something went wrong:"} ${"please clicked inside div"}` 
+        //     e.target.innerHTML = output ;
+        // },true)
+        
+    </script>
+</body>
+</html>
