@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation</title>
+</head>
+<body>
+    <div class="parent">
+        <input type="text"  id="name" data-upprcase></li>
+        <input type="text"  id="mail"></li>
+        <input type="text"  id="phone"></li>
+            
+    </div>
+    <script>
+        document.querySelector("#name").addEventListener('keyup',(e)=>{
+            console.log(e);
+             if(e.taget.dataset.uppercase != undefined){
+                 e.target.value = e.target.value.toUpperCase();
+             }
+        })
+    </script>
+</body>
+</html>
