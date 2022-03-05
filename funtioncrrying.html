@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunctionCurrying</title>
+</head>
+
+<body>
+    <h3>This is function currying</h3>
+    <h2 id="output">output:</h2>
+    <script>
+        function screen() {
+            let product = function (a, b) {
+                console.log(a * b);
+            }
+            let multiply = product.bind(this, 2, 3);
+            console.log(multiply());
+            let answer = document.querySelector("#output").innerHTML= multiply();
+            document.write(answer);
+        }
+        screen();
+
+    </script>
+</body>
+
+</html>
