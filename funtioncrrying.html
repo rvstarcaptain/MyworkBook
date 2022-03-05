@@ -12,16 +12,34 @@
     <h3>This is function currying</h3>
     <h2 id="output">output:</h2>
     <script>
-        function screen() {
-            let product = function (a, b) {
+        // function screen() {
+            
+        //     // let answer = document.querySelector("#output").innerHTML= multiply();
+        //     // document.write(answer);
+        // }
+        // screen();
+        //BY BINDMETHOD
+        let product = function (a, b) {
                 console.log(a * b);
             }
-            let multiply = product.bind(this, 2, 3);
-            console.log(multiply());
-            let answer = document.querySelector("#output").innerHTML= multiply();
-            document.write(answer);
+            let multiply1 = product.bind(this, 2, 3);
+            multiply1();
+            let multiply2 = product.bind(this,5)
+            multiply2(6);
+            product.call(this,4,5);
+            let multiply3 = product.bind(this,67,6)
+            multiply3();
+            
+        //WITH THE HELP OF CLOSURE
+        let plus = function (x){
+            return function(y){
+                console.log(x+y);
+            }
         }
-        screen();
+        let plus1 = plus(5);
+        plus1(6);
+        let plus2 = plus(80);
+        plus2(45);
 
     </script>
 </body>
