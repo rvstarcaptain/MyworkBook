@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name1 = {
+            firstname: "rahul",
+            lastname: "verma"
+        }
+
+
+        let printfullname = function (state, country) {
+            console.log(this.firstname + " " + this.lastname + " " + state + " " + country)
+        }
+
+
+        let name2 = {
+            firstname: "rohit",
+            lastname: "verma",
+
+        }
+        let name3 = {
+            firstname:"ravi",
+            lastname:'kumar',
+        }
+        //call
+        printfullname.call(name1, "westbengal", "india");
+        //functionborrowing
+        //apply
+        printfullname.apply(name2, ["sikar", "rajasthan"]);
+        //bind function binds the function and to be invoked later
+        let mybindname = printfullname.bind(name3,"seatle",'usa');
+        mybindname();
+    </script>
+
+</body>
+
+</html>

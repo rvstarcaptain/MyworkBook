@@ -45,7 +45,7 @@ map() does not mutate the array on which it is called (although callback, if inv
 
 12.  Normally we use the function keyword before the function name to define a function in JavaScript, however, in anonymous functions in JavaScript, we use only the function keyword without the function name.
 
-13. Native objects are objects that adhere to the specs, i.e. "standard objects". Host objects are objects that the browser (or other runtime environment like Node) provides.
+13. Native objects are objects that adhere to the specs, i.e. "standard objects" example object,strings,eval,array iteratiive methodsetc. Host objects are objects that the browser (or other runtime environment like Node) provides ex - dom,settimeout,httprequest,history,location etc.
 
 14. function Person(){} is just a normal function declaration. The convention is to use PascalCase for functions that are intended to be used as constructors. var person = Person() invokes the Person as a function, and not as a constructor.
 
