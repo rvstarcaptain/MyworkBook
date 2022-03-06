@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forin</title>
+</head>
+<body>
+    <h2>this is forin</h2>
+    <script>
+        var profile = {
+            firstname:"Rahul",
+            lastname:"Verma",
+            DOB:"10-02-1993",
+            city:"kolkata",
+            State:"westbengal",
+            phoneNo:"9330932580"
+        }
+        for(var property in profile){
+            console.log(property + profile[property]);
+            document.write(property +":"+ profile[property],'<br>');
+        }
+        let s = "string";
+        for(let property in s){
+            s[property]=true;
+            if(s[property]=='i'){
+                console.log(s[property]);}
+            // }else{
+            //     console.log(s[property])
+            // }
+        }
+    </script>
+</body>
+</html>
