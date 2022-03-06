@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>while loop</title>
 </head>
+
 <body>
     <h1>this is while topic</h1>
     <h3 id="while">will see the action after reloding me</h3>
+    <span id="table"></span>
     <script>
-        let counter = 1;
-        while(counter<=10){
-            console.log("my name is RV");
-            document.getElementById('while').innerHTML = "RV";
-            counter++;
-            
+        // let counter = 1;
+        // while(counter<=10){
+        //     document.write(1)
+        //     counter++;
+
+        // }
+        // function addevenupto100(a) {
+
+
+        //     //     for(let i = 1;i<=10;i++){
+        //     //         console.log("table  of ", + a ,"X " + [i]+ " =",+ a*[i]);
+
+
+        //     //     }
+
+        // }
+        // addevenupto100();
+        let count = 1;
+        let sum = 0;
+        while (count <= 100) {
+            if (count % 2 == 0) {
+                sum = sum + count;
+
+
+
+            }
+            count++;
         }
-        
+        console.log(sum)
+        document.write(" ", sum);
+        // tableof(2);
+        // tableof(3);
+
     </script>
 </body>
+
 </html>
