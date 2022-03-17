@@ -15,7 +15,7 @@
         main{
             width: 100%;
             display: grid;color: rgb(31, 141, 236);
-            grid-template-rows: 50px 400px 50px;
+            grid-template-rows: 100px 400px 50px;
             grid-template-columns: repeat(3,1fr);
             border: 2px solid black;
             margin: 50px 0px;
@@ -27,6 +27,8 @@
             border: 2px solid black;
             background-color: blue;
             grid-column: 1/-1;
+            color: burlywood;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         .main{
             border: 2px solid black;
@@ -39,12 +41,20 @@
             background-color: yellow;
             grid-column: 1/-1;
         }
+        a{
+            color: aqua;
+        }
         
     </style>
 </head>
 <body>
     <main > 
-        <div class="header">Header</div>
+        <div class="header">
+            <h4><a  href="">Speaker: Mr.Henry</a></h4>
+            <h3>Venue:Usa,Seattle </h3>
+            <h4>Schedule:<input type="text" value="21st-march-2022" disabled> </h4>
+        
+        </div>
         <div class="main">
             <form action="">
                 <h1>Registration From</h1>
