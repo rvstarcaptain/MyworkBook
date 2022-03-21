@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>template-literals</h1>
+    <script>
+      let str = "rahul \t verma"
+      let showfullname = ` hello  \n ${str}  `  
+      console.log(showfullname)
+      //in substr length and index is givven str.substr(8,20)
+      //in substring position is mentioned
+
+      let str2 = "hello this is rv and i am learning evrything am from youtube";
+      let fetchout = str2.substr(6,4);
+      console.log(fetchout);
+      let fetchout2 = str2.substring(1,4);
+      console.log(fetchout2);
+      let position = str2.indexOf("from");
+      console.log(position);
+      let position2 = str2.lastIndexOf("am");//if throws -1 i.e not present
+      console.log(position2);
+      let removespace = " Rahul Verma  ";
+      console.log(removespace.toUpperCase())
+      let spaceremoved = removespace.trim();
+      console.log(spaceremoved.toLowerCase()); 
+      console.log(removespace.replace("Verma" ,"Mrverma"))
+      console.log(str2.includes("am",))
+
+
+   </script>
+</body>
+</html>
