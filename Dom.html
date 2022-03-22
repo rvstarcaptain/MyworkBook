@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>this is dom study</h1>
+    <p class="pick">this is first</p>
+    <p id="second">this is second</p>
+    <p class="pick">this is third</p>
+    <ul id="ul1">
+        <li >1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <script>
+    //    let ele = document.getElementsByClassName('pick');
+    //    for(let i =0;i<ele.length;i++){
+    //        ele[i].innerHTML="hello this is dom";
+    //    }
+    // let elem2 = document.querySelectorAll('p.pick');
+    // console.log(elem2.innerHTML="hello this is dom");
+    // for(let i =0;i<elem2.length;i++){
+    //         elem2[i].innerHTML="hello this is dom";
+    //     }
+
+        //traversing element
+        // let tag = document.getElementsByTagName('ul')[0].innerHTML="hell";
+        // console.log(tag);
+        // let byparent = document.getElementsByTagName('li')[0];
+        // let tkngparent = byparent.parentElement;
+        // tkngparent.innerHTML="this is parent"
+        // console.log(tkngparent);
+        //create and append
+        let ul = document.getElementById('ul1');
+        let li = document.createElement('li');
+        ul.appendChild(li).innerHTML="i am added";
+        
+
+    </script>
+</body>
+</html>

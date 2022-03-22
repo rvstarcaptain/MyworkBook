@@ -16,7 +16,8 @@
         
         document.getElementById('predict').addEventListener('click',myfunc);
             function myfunc(){
-                let random = Math.ceil(Math.random()*10);
+                let random = Math.ceil(Math.random()*(25-15))+15;
+                
                 if (random == 1){
                     document.getElementById('result').innerHTML = "bingo";
                 }else if(random ==2){
@@ -26,13 +27,14 @@
                 }else if(random==10){
                     document.getElementById('result').innerHTML = "Next move";
                 }else{
-                    document.getElementById('result').innerHTML = "hardluck";
+                    document.getElementById('result').innerHTML = "hard  luck";
                 }
-            
+                
             
             document.getElementById('output').innerHTML= `Prediction: ${random}`;
-            }
             
+            }
+           
             
             
         
