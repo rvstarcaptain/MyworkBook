@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+</head>
+<body>
+    <h1>mathFunction</h1>
+    <button id="predict">predict</button>
+    <h2 id ='output'>Prediction:</h2>
+    <h3 id="result"></h3>
+
+    <script>
+        
+        document.getElementById('predict').addEventListener('click',myfunc);
+            function myfunc(){
+                let random = Math.ceil(Math.random()*10);
+                if (random == 1){
+                    document.getElementById('result').innerHTML = "bingo";
+                }else if(random ==2){
+                    document.getElementById('result').innerHTML = "charlie";
+                }else if(random ==3){
+                    document.getElementById('result').innerHTML = "Alfha";
+                }else if(random==10){
+                    document.getElementById('result').innerHTML = "Next move";
+                }else{
+                    document.getElementById('result').innerHTML = "hardluck";
+                }
+            
+            
+            document.getElementById('output').innerHTML= `Prediction: ${random}`;
+            }
+            
+            
+            
+        
+    </script>
+</body>
+</html>

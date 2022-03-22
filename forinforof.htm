@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object findinng with for in and for of</h1>
+    <script>
+        let person = {
+            firstname: "rahul",
+            lastname:"verma",
+            age:27,
+            city:"kolkata",
+            sayhello :function(){ //3.type
+                console.log("hello world3 !!")
+            },
+            sayhi(){ //4.type es6 update
+                console.log("hello world4 !!")
+            }
+
+        }
+        // for(let key in person){
+        //     console.log(` ${key} : ${person[key]}`);
+        // }
+        // for(let key2 in  person){
+        //     console.log(` ${key2} : ${person[key2]}`); 
+        // }
+            person.sayhi();
+           // person.sayhii();
+        //4 typemethod for personects
+        //function with object is called as method.
+        //1.type
+        person.sayhii = function(){
+            console.log("hello world !!");
+        }
+        person.sayhii();
+        console.log(person);
+        //2.type
+        function greetings(){
+            console.log("hello world2 !!");
+        }
+        //3.type 
+        //inside object
+    </script>
+</body>
+</html>

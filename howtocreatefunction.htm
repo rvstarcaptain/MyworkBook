@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="png" href="C:\Users\verma\Downloads\downloadlogo.png" type="image/x-png" >
+</head>
+<body>
+    <h1>creating function</h1>
+    <script>
+        //1.user define function self made function.
+        //2.predefined function just used when needed.
+
+        //userdefined function
+        // function table(number){
+        //     for(let i=0;i<=10;i++){
+        //         console.log(document.write(` ${number} x ${i} = ${number*[i]} <br>`));
+                
+        //     }
+        //     document.write("<br>")
+        // }
+        // table(2);
+        // table(3);
+        //parameters aka arguements
+        //the arguement objects.
+       //for adding numbers add as much as by passing arguments
+       function addingfunc(){
+           if (arguments.length == 0){
+               console.log("no arguments passed")
+           }else{
+               let sum = 0 ; 
+               for(let i=0;i<arguments.length;i++){
+                   sum+=arguments[i]
+               }
+               console.log(sum);
+           }
+       }
+       addingfunc(2,3,4,5,6);
+
+       
+
+
+    </script>
+</body>
+</html>
