@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddylist</title>
+</head>
+<body>
+    <input type="text" id="screen"><button id="addbuddy">addBuddy</button>
+    <h2>Buddyname:</h2>
+    <ul id="list">
+
+    </ul>
+    <script>
+      let screen =document.getElementById('screen');
+      let list = document.getElementById('list');
+      document.getElementById('addbuddy').addEventListener('click',addingbuddy)
+        function addingbuddy(){
+           let buddylist = document.createElement('li');
+           let remove = document.createElement('button');
+           remove.setAttribute('id','remove');
+           remove.innerText = "delet";
+          
+           
+
+           let removelist = list.appendChild(remove);
+           let buddy= list.appendChild(buddylist);
+            
+           buddylist.innerText =  screen.value  ;
+           
+           
+           console.log(buddy);
+           console.log(removelist);
+           screen.value="";
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
     <p id="second">this is second</p>
     <p class="pick">this is third</p>
     <ul id="ul1">
-        <li >1</li>
+        <li>1</li>
         <li>2</li>
         <li>3</li>
     </ul>
@@ -42,9 +42,31 @@
         // console.log(tkngparent);
         //create and append
         let ul = document.getElementById('ul1');
-        let li = document.createElement('li');
-        ul.appendChild(li).innerHTML="i am added";
+        // let li = document.createElement('li');
+        // ul.appendChild(li).innerHTML="i am added";
+        // let li1=document.getElementsByTagName('li')[0];
+        // ul.removeChild(li1);
+        // let li2 = document.createElement('li');
+        //  li2.setAttribute('class','li2');
+        // li2.textContent="list is added"
+        // let insert = ul.firstElementChild.nextElementSibling.nextElementSibling;
+        // ul.insertBefore(li2,insert);
+        // let clone = ul.cloneNode(true);
+        // console.log(clone)
+        // document.body.appendChild(clone);
+        // let replace=ul.firstElementChild.nextElementSibling;
+        // let newreplacer = document.createElement('li');
+        // newreplacer.textContent="replaced by dom";
+        // ul.replaceChild(newreplacer,replace);
+        //replacer
+        //insertadjecent 
+       // beforebegin,afterbegin,beforeend,afterend
+       let adjecnttext = "<h2>i am adjecently added</h2>";
+       ul.insertAdjacentHTML("afterbegin",adjecnttext);
         
+
+
+
 
     </script>
 </body>
