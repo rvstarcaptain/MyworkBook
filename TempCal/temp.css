@@ -1,0 +1,44 @@
+#heading{
+    text-align: center;
+}
+.main-container{
+    text-align: center;
+    padding: 40px;
+    border: 2px solid black;
+    background-color: aqua;
+    height: 150px;
+   
+
+}
+.inp{
+    display: inline-block;
+    margin: 5px;
+}
+#celcius{
+    padding:10px;
+    font-weight: bolder;
+   
+    
+}
+#farhen{
+    padding:10px;
+    font-weight: bolder;
+}
+#cel{
+    font-size: 20px;
+    font-weight: bolder;
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgb(37, 39, 32) 1px;
+   
+
+    
+}
+#far{
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}

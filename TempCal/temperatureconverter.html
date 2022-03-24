@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor</title>
+    <link rel="stylesheet" href="./temp.css">
+    
+</head>
+<body>
+    <h1 id='heading'>Temperature</h1>
+    <div class="main-container">
+        <div class="inp">
+            <span id="cel">celcius</span><br>
+            <input type="number" value="0" id="celcius" >
+            <span id="equal">  =    </span>
+        </div>
+        <div class="inp">
+            <span id="far">farhenheight</span><br>
+            <input type="number" value="32" id="farhen">
+        </div>
+    </div>
+    <script>
+        let cel = document.getElementById('celcius');
+        let far = document.getElementById('farhen');
+        cel.addEventListener('input',function(){
+            
+            let c= (cel.value * 9/5) + 32
+            far.value = c;
+        })
+        far.addEventListener('input',function(){
+            
+            if(far.value == false){
+               return cel.value= Number(0);
+            }else{
+                let f = ((far.value - 32) * 5/9 )
+                cel.value= f.toFixed(4);
+            }
+        })
+    </script>
+
+</body>
+</html>
