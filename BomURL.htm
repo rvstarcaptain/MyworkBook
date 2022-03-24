@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom</title>
+</head>
+<body>
+<button id="google">
+    Go To google
+</button>
+<button id="stop">closewebsite</button>
+<script>
+    
+    let url ='https://google.com' ;
+    let features = 'height=600 , width=600 ,color=yellowgreen';
+   let navigate= document.getElementById('google')
+   navigate.addEventListener('click',function(){
+       window.open(url,'mygoogle',features)
+   })
+   document.getElementById('stop').addEventListener('click',function(){
+       window.stop(url,'google')
+   })
+</script>
+    
+</body>
+</html>
