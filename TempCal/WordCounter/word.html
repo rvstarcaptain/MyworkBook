@@ -9,7 +9,7 @@
 </head>
 <body>
    <h1 id="heading">Write Your Story</h1>
-   <textarea  name="" id="textArea" cols="30" rows="10"></textarea> <br>
+   <textarea   id="textArea" cols="30" rows="10"></textarea> <br>
 
    <div id="wordcounter">
       <span id="word">0</span>    Word  <span id="character">0</span>       character
@@ -17,9 +17,10 @@
    </div>
    <div id="maxword"></div>
    <script>
-       let textArea = document.getElementById('textArea').addEventListener('input',function(){
+        document.getElementById('textArea').addEventListener('input',function(){
         let char = document.getElementById('character');
-        let text = document.getElementById('textArea').value;
+        let textArea = document.getElementById('textArea');
+        let text = textArea.value;
         char.innerHTML = text.length;
         
         let word = document.getElementById('word');
@@ -29,9 +30,13 @@
            return element != "";
         })
         function maxwordlength(){
-            if (cleanword.length>100){
+            if (cleanword.length>10){
                 document.getElementById('maxword').innerHTML = "Maximum word reached!!!!";
-                text.value = text;
+                textArea.setAttribute('maxlength',Number(text.length));
+                
+                console.log(textArea);
+
+                console.log(text.maxlength = text.length);
             }else{
                 word.innerHTML = cleanword.length;
             }
