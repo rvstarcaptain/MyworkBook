@@ -29,9 +29,9 @@
            return element != "";
         })
         function maxwordlength(){
-            if (cleanword.length>10){
+            if (cleanword.length>100){
                 document.getElementById('maxword').innerHTML = "Maximum word reached!!!!";
-                
+                text.value = text;
             }else{
                 word.innerHTML = cleanword.length;
             }
