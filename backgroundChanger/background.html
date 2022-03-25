@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./background.css">
+</head>
+<body>
+    <h1 id="head">background checker</h1>
+    <div class="colorpicker">
+        <span class="color" id="pink"></span>
+        <span class="color" id="black"></span>
+        <span class="color" id="blue"></span>
+        <span class="color" id="aqua"></span>
+    </div>
+    <img id="image" src= './imgfolder/image.jpg'width="50%" alt="aboutus">
+    <p id="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi ex, possimus sit officia suscipit quidem unde repudiandae placeat adipisci aliquid laudantium, corporis distinctio aut delectus pariatur maiores exercitationem deleniti
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla. Officiis omnis molestias fuga quas, eos minima dicta. Delectus dolores ratione est cum laborum! Reiciendis cum nulla dolor blanditiis illum.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea sequi quas suscipit. Cumque qui voluptatem praesentium esse sunt quibusdam libero harum iusto ipsam! Veniam, eos ea sit minus dolor exercitationem?
+        Repellendus odio numquam officiis tempore ab placeat veniam consequuntur ullam rerum maxime? Perferendis velit nostrum sit nemo maiores voluptates, enim tenetur tempore corporis fugiat consectetur deserunt placeat fugit ex sed!
+
+    </p>
+    <script>
+        document.getElementById('pink').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'pink';
+            document.getElementById('text').style.color = 'black';
+            document.getElementsByClassName('colorpicker')[0].style,backgroundColor = 'lightblue'
+
+        })
+        document.getElementById('black').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'black';
+            document.getElementById('text').style.color = 'white';
+            document.getElementById('head').style.color = 'white';
+
+        })
+        document.getElementById('blue').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'blue';
+            document.getElementById('text').style.color = 'white';
+            document.getElementById('head').style.color = 'white';
+
+        })
+        document.getElementById('aqua').addEventListener('click',function(){
+            document.body.style.backgroundColor = 'aqua';
+            document.getElementById('text').style.color = 'black';
+            document.getElementById('head').style.color = 'black';
+
+        })
+
+    </script>
+</body>
+</html>

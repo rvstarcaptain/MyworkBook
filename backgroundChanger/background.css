@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#head{
+    text-align: center;
+}
+#image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+#text{
+    text-align: justify;
+    margin: 50px;
+}
+.color{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: right;
+}
+#pink{
+    background-color: pink;
+}
+#black{
+    background-color: black;
+}
+#aqua{
+    background-color: aqua;
+}
+#blue{
+    background-color: blue;
+}
+.colorpicker{
+  text-align: right;
+  box-sizing: border-box;
+  
+}
