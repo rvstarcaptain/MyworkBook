@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickymenu</title>
+    <style>
+        #header{
+            text-align: center;
+            height: 250px;
+        }
+        #logo{
+            width: 100px;
+            height: auto;
+        }
+        #menu{
+            background-color: aqua;
+            text-align: center;
+                 
+        }
+        #menu li{
+            display: inline-block;
+            font-size: 20px;
+            padding: 20px;
+            
+        }
+        li:hover{
+            color: rgb(247, 240, 246);
+            background-color: black;
+            cursor: pointer;
+        }
+        #menu input{
+            display:float;
+            float: right;
+            margin: 20px 20px;
+            border-radius: 5px;
+        }
+        .container img{
+            width: 100%;
+            height: auto;
+        }
+        #text{
+            text-align: justify;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="./logos/3034007-inline-i-applelogo.webp" id="logo" alt="apple">
+    </div>
+    <nav id="menu" >
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li>Help</li>
+        <input type="text" placeholder="search..">
+    </nav>
+    <div class="container" >
+        <img src="./logos/appleCommunity.webp" alt="appleCommunity">
+    </div>
+    <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est distinctio architecto corrupti nostrum, quos temporibus ad quasi. Pariatur sed facere vel rem qui adipisci commodi illo earum in odit!
+        Aperiam at incidunt iure numquam ea voluptatem facere laborum enim totam ab nam dolores veritatis placeat iste provident, itaque dolorem, soluta voluptatibus a, ipsa vel. Quae unde saepe labore adipisci?
+        Amet modi eveniet molestias voluptatibus praesentium fugiat alias! Doloremque aliquid pariatur iste eum. Possimus, voluptatem? Blanditiis repudiandae magni hic, dicta quasi obcaecati maxime ex iste facere quos illo a quod?
+        Qui, temporibus? Sed laboriosam vero dicta ea accusamus maxime, similique magni, mollitia tempore, quia suscipit. Natus ullam nulla consequatur quos inventore? Beatae neque, aliquid soluta placeat nihil tempore. Praesentium, alias!
+        Suscipit laboriosam hic porro sapiente ducimus cum praesentium excepturi fuga culpa numquam voluptate, repudiandae vero officia officiis est ut necessitatibus iste nulla neque maxime quas! Quisquam neque corporis consequatur blanditiis!
+        Autem vel quo molestiae suscipit facilis ex eum ipsa iure aliquam obcaecati recusandae eos quod numquam itaque consectetur quia soluta sed minus cum quasi assumenda, quas a. Maiores, rem ex!
+        Id aut earum temporibus eligendi vel cupiditate quo, quis illo quas voluptate possimus, eius sed, voluptatibus magnam accusantium consequatur nihil? Facilis eos ducimus aspernatur excepturi quaerat, distinctio repudiandae provident aliquam?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum adipisci eligendi sequi blanditiis aliquam quidem sunt ipsam ea, corrupti quisquam doloribus eaque, numquam dolorum labore vitae sit ducimus velit. Assumenda.
+        Dolores at facere sint repellat iusto quisquam ullam. Aliquid dolores cupiditate eum officiis velit laudantium ducimus quas corporis non magnam optio, molestiae tempore sequi, tenetur voluptate! Deleniti sit aliquam illo.
+        Perferendis non ipsam facilis officia voluptatum, ipsa cum doloremque adipisci ex recusandae animi sequi quaerat, veritatis ullam qui quibusdam vero harum ducimus minima quos culpa hic commodi in. Autem, dolore!
+        Expedita illum impedit, beatae repudiandae illo sapiente dolor sed numquam molestiae. Nemo tempore voluptatum maxime quasi blanditiis? Obcaecati commodi facere possimus dolor, rem voluptatibus fugit, pariatur inventore harum nostrum veritatis?
+        Earum maiores porro provident reprehenderit magnam, odit modi sapiente dolore, similique dolorem a veniam, ut adipisci. Rerum voluptatem ipsam exercitationem ratione provident dignissimos, et, culpa dolorum saepe qui dolores similique.
+        Labore iure adipisci possimus earum amet veritatis quod nesciunt doloremque iste illum. Maiores magnam repellat ipsa, temporibus natus at sint fugit corrupti hic itaque, eaque dolorem error similique quisquam voluptas?
+        Ipsam culpa illum inventore cupiditate, dignissimos accusamus! Adipisci rem voluptate minima suscipit animi commodi totam dolores minus autem deleniti ad dolore, nesciunt deserunt, pariatur sapiente nostrum aliquam repellat ipsam. Numquam.
+        Atque temporibus facilis mollitia soluta impedit nesciunt. Autem culpa ratione illum voluptates praesentium soluta excepturi rerum, quasi officia fugiat, eveniet accusantium assumenda nihil laudantium dolores rem modi provident at sequi.
+        Doloremque numquam, assumenda facere velit iusto exercitationem, quia ex ullam non veniam, dolorem doloribus. Tenetur voluptate ab veniam! Dolor doloremque eum itaque voluptatem exercitationem quam placeat deserunt ad ratione excepturi.
+        Possimus, mollitia ipsum officia facere omnis quos, labore voluptas aspernatur numquam, eaque quod assumenda veritatis quae nemo minima provident tempora. Minima ut laudantium fugiat maxime odio dolor aut soluta laborum!
+    </p>
+    <script>
+        window.addEventListener('scroll',function(){
+            let menubar= document.getElementById('menu');
+            if(window.pageYOffset>250){
+               
+               menubar.classList.add('sticky');
+            }else{
+                menubar.classList.remove('sticky');
+            }
+        })
+    </script>
+</body>
+</html>
