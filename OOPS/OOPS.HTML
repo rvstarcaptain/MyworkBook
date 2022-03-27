@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>
+        pillars of OOPS
+        UNDERSTANDING OOPS BY REAL TERMS
+        1.OBJECT
+        2.CLASS
+        3.INHERITENCE
+         1.OBJECT->evrything is object 
+         human,car 
+          object has 2 things>>>>
+         a.featyres or property
+         b. behaviours.action performed by or on it.
+        EXAMPLE>>>
+        rahul is object 
+        >>full name ,age,weight,color,height(a)
+        >> eat,walk,sleep,run (b)
+        so for DRY concept>>>class introduced
+        it takes the common property of object and present as blueprint.
+        CLASS means grouping of object. 
+        diff object may have diff behaviours so to eliminate this INHERITANCE was introduced
+        procedural vs object
+        in OOP concept we grop function and variable in a block called class
+
+        4 PILLARS of oops
+        A.Encapsulation: >>wrapping updata and member function together into a single unit i.e class.
+        B. Abstraction >> showing only necessory features of an object to the outside world
+        like on tv with remote and see the channel but inside what happning we dnt know
+        C. inheritence >> take the property between child element from the parent element.
+        D. polymorphism >>> many forms a subclass can define its own unique behaviour and still share the same 
+        functionalities or bhevaiours of its parent base class.
+
+        </P>
+        <script>
+            function Human(first,last,age,city,state,energy){
+                this.firstName = first;
+                this.lastName = last;
+                this.Age = age;
+                this.city = city;
+                this.State = state;
+                this.pow = energy;
+                this.ChangeAge = function(newage){
+                    this.Age = newage;
+
+                }
+                this.fullname = function(){
+                    console.log(`${this.firstName} ${this.lastName}`);
+                }
+                this.eat = function(eats){
+                    this.pow += eats ;
+                }
+
+            }
+            let employee1 = new Human("rahul","verma",28,"Kolkata","Westbengal",80);
+            console.log (JSON.stringify(employee1));
+            employee1.ChangeAge(29);
+            console.log(employee1);
+            employee1.fullname();
+            console.log(employee1);
+            employee1.eat(20)
+            console.log(employee1);
+        </script>
+</body>
+</html>
