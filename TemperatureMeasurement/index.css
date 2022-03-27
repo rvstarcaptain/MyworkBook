@@ -16,13 +16,13 @@
     display: inline-block;
     margin: 5px;
 }
-#celcius{
+#celsius{
     padding:10px;
     font-weight: bolder;
    
     
 }
-#farhen{
+#farhenheit{
     padding:10px;
     font-weight: bolder;
 }

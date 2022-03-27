@@ -1,5 +1,5 @@
-let cel = document.getElementById('celcius');
-        let far = document.getElementById('farhen');
+let cel = document.getElementById('celsius');
+        let far = document.getElementById('farhenheit');
         cel.addEventListener('input',function(){
             
             let c= (cel.value * 9/5) + 32
