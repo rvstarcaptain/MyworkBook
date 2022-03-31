@@ -1,0 +1,24 @@
+.flex-container{
+    background-color: indigo;
+    display: flex; 
+    
+}
+.flex-child{
+
+    background-color: rgb(31, 7, 8);
+    margin: 20px;
+    padding: 20px;
+    color: aqua;
+    width: 100px;
+    text-align: center;
+    
+}
+#one{
+    flex-grow: 1;
+}
+#two{
+    flex-grow: 4;
+}
+#three{
+    flex-grow:1;
+}
