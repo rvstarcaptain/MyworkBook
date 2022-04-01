@@ -92,7 +92,7 @@
 
       //now es6 features ref...line 50
 
-      class SuperHero {
+      class Character{
         constructor(name, planet, power, origin) {
           this.name = name;
           this.planet = planet;
@@ -103,20 +103,33 @@
         booster(powers) {
           this.power += powers;
         }
-        
+         
+        reducer(negative){
+          this.power -= negative;
+        }
+      }
+      class SuperHero extends Character{
+        constructor(name, planet, power, origin){
+          super(name, planet, power, origin)
+
+
+        }
       }
       let SuperHero1 = new SuperHero("spiderman", "earth", 60, "spider-bite");
       console.log(SuperHero1);
       SuperHero1.booster(20);
       console.log(SuperHero1);
 
-      class SuperVillian extends SuperHero{
+      class SuperVillian extends Character{
           constructor(name, planet, power, origin,sign){
               super(name, planet, power, origin)
               this.sign =sign;
           }
           
       }
+      
+      let SuperVillian1 = new SuperVillian("thanos","Titan",150,"guntlet","enemy");
+      SuperVillian1.reducer(20);
     //   class clashOfTitans extends SuperHero{}
     //   Object.assign(SuperVillian.prototype,clashOfTitans);
       
@@ -137,7 +150,7 @@
      // let battel = new clashOfTitans1()
      
       
-      let SuperVillian1 = new SuperVillian("thanos","Titan",150,"guntlet","enemy");
+      
 
       
 
