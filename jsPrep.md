@@ -137,3 +137,18 @@ Whereas, Rest syntax looks exactly like spread syntax. In a way, rest syntax is 
 42. To share code between components, create an ES6 module in a service component and export the variables or functions that you want to share using standard JavaScript syntax. An ES6 module is a JavaScript file that explicitly exports variables or functions that other modules can use.
 
 43. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created. Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except Object.
+
+>>>>>>>>CLASS NOTES>>>>>>>>>>>
+
+Different researches were carried out on the role of body language and it has been
+reported that during communication: (1) only 7% of the information human transmits to
+others is in the language we use; (2) 38% in how people speak—quality of voice, accent,
+voice projection, emphasis, expression, pace, volume, pitch, etc.; and (3) 55% through
+body language—posture, position, eye contact, facial expression, head and body
+movements, gestures, touch, etc.
+
+https://www.youtube.com/watch?v=Fi-0PYQ4CSM
+
+
+
+    
