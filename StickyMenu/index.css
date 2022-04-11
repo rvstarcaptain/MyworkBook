@@ -1,9 +1,21 @@
 body{
     height: 50%;
 }
-#header{
+#header img{
     text-align: center;
-    height: 250px;
+    display: inline-block;
+    height: auto;
+    
+    color: white;
+    border: 2px solid rgb(236, 224, 224);
+    border-radius: 50px;
+    background-color: white;
+    
+}
+#header{
+    height: 250px ;
+    margin-left: 50%;
+    margin-top: 0px;
 }
 #logo{
     width: 100px;
