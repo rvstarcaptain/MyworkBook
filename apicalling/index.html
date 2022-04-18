@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main-container{
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            /* margin: 100px 100px; */
+            border: 2px solid black;
+            padding: 20px;
+            width: 100vw;
+            height: 50vh;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body class="main-container">
+    <!-- <p id="api"></p>
+    <img id="image" src="" />  -->
+
+        <form  >
+            <label for="firstname">FirstName: </label>
+            <input type="text" id="firstname" ><br>
+            <label for="lastename">LasteName: </label>
+            <input type="text" id="lastename" > <br>
+            <button>Submit</button>
+
+        </form>
+
+    <!-- <script>
+        let url = 'https://reqres.in/api/users/2';
+        fetch(url).then((data) => data.json()).then(response => {
+             document.getElementById('api').innerText = `${response.data.first_name} ${  response.data.last_name}  ` 
+             document.getElementById('image').src = response.data.avatar;
+
+        }
+           
+                
+            )
+        
+    </script> -->
+</body>
+
+</html>
