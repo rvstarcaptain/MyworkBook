@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort</title>
+</head>
+<body>
+    <script>
+        let arr = [2,5,1,8,10,9]
+        let n = arr.length;
+        for(let i =1;i<n;i++){
+            temp = arr[i];
+            j = i-1;
+            while(j>=0 && arr[j]>temp){
+                arr[j+1]=arr[j];
+                j--;
+            }
+            arr[j+1]=temp;
+            console.log("array sorted in ",arr, "and at",arr[i] )
+        }
+    </script>
+</body>
+</html>
