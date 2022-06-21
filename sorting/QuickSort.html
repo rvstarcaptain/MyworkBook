@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Sort</title>
+</head>
+
+<body>
+    <script>
+        function QuicklSortPartiotion(arr) {
+            let lowerbound = 0;
+            let upperbound = arr.length;
+            let pivot = arr[lowerbound];
+            let start = lowerbound;
+            let end = upperbound;
+            while (start < end) {
+                while (arr[start] <= pivot) {
+                    start++; 
+                }
+                
+                while (arr[end] > pivot) {
+                    end--;   
+                }
+                
+                if (start < end) {
+                    
+                    arr[start] = arr[end];
+                   
+
+                }
+
+            }
+            
+            arr[lowerbound] = arr[upperbound];
+            
+            return end;
+            
+        }
+        console.log(QuicklSortPartiotion([4,5,10,6,9,11,14]),"arr sorted in " ,"times","and");
+    </script>
+</body>
+
+</html>

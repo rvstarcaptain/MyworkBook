@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary search</title>
+</head>
+
+<body>
+    <script>
+        function binarysearch(arr,Data) {
+            
+            let datafound = false
+            
+            let n = arr.length;
+            let l = 0;
+            let r = n - 1;
+            let mid = Math.floor((l + r )/ 2);
+
+            while(l<r) {
+
+                if (Data == arr[mid]) {
+                   datafound = arr[mid];
+                   break;
+                } else if (Data < arr[mid]) {
+                    r = mid - 1
+                } else {
+                    l = mid + 1
+                }
+                mid =Math.floor((l + r )/ 2);
+               
+            }
+            return datafound;
+        }
+        console.log(binarysearch([1, 2, 65, 68, 77, 100, 116, 120],100));
+        
+
+
+    </script>
+</body>
+
+</html>
